@@ -462,3 +462,139 @@ article{
     align-items: center ;
     justify-content: center !important;
 }
+/* Pricing Section */
+.pricing {
+    background-color: #4B0082; /* Purple background */
+    color: white;
+    padding: 40px 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.pricing__container {
+    width: 992px; /* As specified */
+    height: 5215px; /* As specified */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.pricing__title {
+    font-size: 3rem;
+    margin-bottom: 40px;
+}
+
+.pricing__plans {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.pricing__plan {
+    background-color: #6A5ACD; /* Lighter purple for the cards */
+    border-radius: 10px;
+    padding: 20px;
+    width: 250px;
+    text-align: center;
+}
+
+.pricing__plan-title {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.pricing__plan-features {
+    list-style: none;
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.pricing__plan-features li {
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.pricing__plan-price {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.pricing__plan-button {
+    background-color: #00CED1; /* Cyan button */
+    color: white;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.pricing__plan-button:hover {
+    background-color: #00B7B3;
+}
+
+/* Media Queries using vh, vw, min, and max */
+@media (max-width: 75vw) { /* When viewport width is less than 75% of the viewport */
+    .pricing__container {
+        width: 90vw; /* Adjust width to 90% of viewport width */
+        height: auto; /* Let height adjust automatically */
+        padding: 15px;
+    }
+
+    .pricing__title {
+        font-size: 2.5rem;
+    }
+
+    .pricing__plans {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .pricing__plan {
+        width: 80%;
+    }
+}
+
+@media (min-height: 80vh) { /* When viewport height is at least 80% of the viewport */
+    .pricing__container {
+        padding-top: 10vh; /* Add padding based on viewport height */
+    }
+}
+
+@media (max-height: 50vh) { /* When viewport height is less than 50% of the viewport */
+    .pricing__container {
+        height: auto; /* Adjust height dynamically */
+    }
+
+    .pricing__plans {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) { /* For larger screens */
+    .pricing__container {
+        width: 992px; /* Keep the specified width */
+        height: 5215px; /* Keep the specified height */
+    }
+
+    .pricing__title {
+        font-size: 3.5rem;
+    }
+
+    .pricing__plan {
+        width: 300px;
+    }
+
+    .pricing__plan-title {
+        font-size: 1.8rem;
+    }
+
+    .pricing__plan-features li {
+        font-size: 1.1rem;
+    }
+
+    .pricing__plan-price {
+        font-size: 1.8rem;
+    }
+}
