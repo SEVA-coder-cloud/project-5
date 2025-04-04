@@ -326,5 +326,139 @@ article{
     height: 20px;
   }
   
-  
-  
+  /* How to Start Section */
+.how-to-start {
+    background-color: #4B0082; /* Purple background */
+    color: white;
+    padding: 40px 0;
+}
+
+.how-to-start__container {
+    width: 992px; /* As specified */
+    height: 5215px; /* As specified */
+    margin: 0 auto;
+    text-align: center;
+}
+
+.how-to-start__title {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.how-to-start__subtitle {
+    font-size: 1rem;
+    margin-bottom: 40px;
+    line-height: 1.5;
+}
+
+.how-to-start__steps {
+    display: flex;
+   
+    align-items: center;
+    gap: 20px;
+}
+
+.how-to-start__step {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    max-width: 600px;
+    text-align: left;
+}
+
+.how-to-start__step-number {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50px;
+    height: 50px;
+    background-color: #00CED1; /* Cyan color for the number circle */
+    border-radius: 50%;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.how-to-start__step p {
+    font-size: 1.2rem;
+    line-height: 1.5;
+}
+
+.how-to-start__arrow {
+    font-size: 1.5rem;
+    color: #00CED1;
+}
+
+/* Media Queries using vh, vw, min, and max */
+@media (max-width: 75vw) {
+    .how-to-start__container {
+        width: 90vw;
+        height: auto;
+        padding: 15px;
+    }
+
+    .how-to-start__title {
+        font-size: 2.5rem;
+    }
+
+    .how-to-start__subtitle {
+        font-size: 0.9rem;
+    }
+
+    .how-to-start__step {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .how-to-start__step-number {
+        width: 40px;
+        height: 40px;
+        font-size: 1.2rem;
+    }
+
+    .how-to-start__step p {
+        font-size: 1rem;
+    }
+}
+
+@media (min-height: 80vh) {
+    .how-to-start__container {
+        padding-top: 10vh;
+    }
+}
+
+@media (max-height: 50vh) {
+    .how-to-start__container {
+        height: auto;
+    }
+
+    .how-to-start__steps {
+        gap: 10px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .how-to-start__container {
+        width: 992px;
+        height: 5215px;
+    }
+
+    .how-to-start__title {
+        font-size: 3.5rem;
+    }
+
+    .how-to-start__subtitle {
+        font-size: 1.2rem;
+    }
+
+    .how-to-start__step p {
+        font-size: 1.4rem;
+    }
+}
+
+.how-to-start{
+    margin-bottom: 100px;
+}
+.how-to-start__steps{
+    align-items: center ;
+    justify-content: center !important;
+}
